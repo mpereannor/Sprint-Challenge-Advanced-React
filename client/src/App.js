@@ -16,7 +16,7 @@ class App extends Component{
   }
   
   componentDidMount(){
-    const playersApi = `https://localhost:5000/api/players`;
+    const playersApi = `http://localhost:5000/api/players`;
 
     axios.get(playersApi)
     .then(response => {
