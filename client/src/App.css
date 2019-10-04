@@ -54,3 +54,7 @@
   opacity: 1;
   cursor: pointer
 }
+
+.cardDisplay{
+  display: flex;
+}

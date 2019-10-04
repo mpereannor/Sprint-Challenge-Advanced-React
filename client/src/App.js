@@ -30,7 +30,6 @@ class App extends Component{
     return (
       <div className="App">
        <Players playerInfo={this.state.plc}/>
-       {/* <Design/> */}
       </div>
     );
   }

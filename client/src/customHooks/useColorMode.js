@@ -8,8 +8,7 @@ const useColor = (key, initialValue ) => {
     
     
     const burnaDiv = document.body;
-
-    // const burnaDiv = document.div('burna');
+    // const burnaDiv2 = document.getElementsByClassName('.burna');
 
     useEffect(() => {
         paint ? burnaDiv.classList.add('colorfy') : burnaDiv.classList.remove('colorfy');},[paint]);
