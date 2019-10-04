@@ -1,19 +1,22 @@
-// import {useEffect} from 'react';
+import {useEffect} from 'react';
 
-// import useLocalStorage from 'useLocalStorage';
+import useLocalStorage from './useLocalStorage';
 
-// const useColor = (key, initialValue ) => {
+const useColor = (key, initialValue ) => {
 
-//     const [paint, setPaint] = useLocalStorage(key, initialValue);
+    const [paint, setPaint] = useLocalStorage(key, initialValue);
+    
+    
+    const burnaDiv = document.body;
+
+    // const burnaDiv = document.div('burna');
+
+    useEffect(() => {
+        paint ? burnaDiv.classList.add('colorfy') : burnaDiv.classList.remove('colorfy');},[paint]);
   
-//     useEffect(() => {
-
-//       paint ? document.div.classList.add('colorfy') : document.div.classList.remove('colorfy');   
-//     },[paint]);
-  
-//     return [paint, setPaint];
+    return [paint, setPaint];
 
 
-// }
+}
 
-// export default useColor;
+export default useColor;

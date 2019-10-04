@@ -33,5 +33,24 @@
 }
 
 .colorfy{
-  color: violet;
+  color: rgb(245, 6, 77);
+  font-family: 'Livvic', sans-serif;
+}
+.hideImage{
+  display: none;
+}
+
+.showImage{
+  display: block;
+}
+
+.colorfyStyle{
+  text-align: center;
+  opacity: 0.5;
+  color: #FF4D00;
+}
+
+.colorfyStyle:hover{
+  opacity: 1;
+  cursor: pointer
 }

@@ -1,21 +1,21 @@
-// import React, {useState} from 'react';
-// import useColor from './customHooks/useColorMode';
+import React, {useState} from 'react';
+import useColor from './customHooks/useColorMode';
 
-// const Design = () => {
+ const Design = () => {
 
-//     const[paint, setPaint] = useColor(false);
+    const[paint, setPaint] = useColor('colorfy', false);
 
-//     const toggleMode = e => {
-//         e.preventDefault();
-//         setPaint(!paint);
-//     };
+    const displayHandler = e => {
+        e.preventDefault();
+        setPaint(!paint);
+    };
 
-//     // return(
-//     //     // <div onClick={toggleMode}
-//     //     //  className={colorfy ? 'yes': 'no'}>
-//     //     // WOMENS CUP
-//     //     // </div>
-//     // )
-// }
-
-// export default Design;
+    return(
+    <div>
+          <div className='burna' onClick={displayHandler}>
+          <h2 className= 'colorfyStyle'>CLICK AND MAKE PAGE NICER</h2>    
+          </div>        
+    </div>
+    )
+}
+export default Design;
