@@ -7,17 +7,27 @@ let tools;
 
 beforeEach(() => {
     rtl.cleanup();
-    tools = rtl.render(<Player/>);
+    tools = rtl.render(<Player name="John" country="UK" searches="2"/>);
 });
 
 describe('Players Component', () => {
-    it('has header being displayed', () => {
+    // it('has header being displayed', () => {
+
+   
+
+    it("shows player name", () => {
+        const accurateText = tools.queryByText(/John/i);
+        expect(accurateText).toBeInTheDocument();
+      });
+        // const userName = 'WOMENS WORLD CUP';
+
+        // expect(rtl.render(<Player userName={userName} />));
         // const pageHeaderText = tools.queryByTestId('playerDisplay');
-        const pageHeader = tools.queryByText(/womens world cup/i);
+        // const pageHeader = tools.queryByText(/womens world /ig);
+        // expect(pageHeader).toBeInTheDocument();
+        // // expect(pageHeaderText).toBeInTheDocument();
 
-
-        expect(pageHeader).toBeInTheDocument();
     });
 
 
-})
+

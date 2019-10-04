@@ -8,6 +8,7 @@ import React, {Component} from 'react';
  
      return(
        <div>
+
            <h1 data-testid='playerDisplay'>WOMENS WORLD CUP
            </h1>
            <div>
