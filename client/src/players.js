@@ -1,25 +1,19 @@
-export default class Player extends Component{
+import React, {Component} from 'react';
+
  
-    render(){
-        
-      return (
-        <div>
- 
-        </div>
-      )
-    }
- }
- 
- class PlayerChild extends Component{
+ export default class Player extends Component{     
  
    render(){
-     const {} = this.props;
+     const playerCardArray = this.props.playerInfo;
  
      return(
        <div>
-         <h1></h1>
-         <h2></h2>
-         <p></p>
+           {playerCardArray.map(player =>
+            <div>
+                <h1>{player.name}</h1>
+                <h1>{player.country}</h1>
+                <h1>{player.searches}</h1>
+            </div>)}
        </div>
      )
    }
